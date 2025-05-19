@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Conversor de Temperaturas</title>
+</head>
+
+<body>
+  <!--Esto es HTML-->
+  <details>
+    <summary>Enunciado: Hacer un conversor de Temperaturas</summary>
+    <p>Hacer un conversor de temperaturas <b>que reciba un valor en Grados Centígrados</b> y lo devuelva en diferentes
+      sistemas:</p>
+    <p>Las fórmulas a aplicar son las siguientes:</p>
+    <ul type="circle">
+      <li>Grados Kelvin = Grados Centígrados + 273.15</li>
+      <li>Grados Farenheit = Grados Centígrados * 9/5 + 32</li>
+      <li>Grados Rankine = (Grados centigrados + 273.15)* 9/5</li>
+      <li>Grados Reaumur = (Grados centigrados * 4/5)</li>
+    </ul>
+    <p>Calcula en una función a la cual llamarás <b><mark>convertir()</mark></b> que calcule todas las conversiones.</p>
+    <p>Muestra en pantalla, en diferentes párrafos, las cuatro conversiones diferentes (Kelvin, Farenheit, Rankine y
+      Reaumur) </p>
+  </details>
+
+  <h1>Conversor de Temperaturas</h1>
+  <h2>Grados Centígrados a otras escalas</h2>
+  <form id="form">
+    <label for="centigrados">Grados Centígrados:</label>
+    <input type="number" id="centigrados" name="centigrados" required>
+    <button type="button" onclick="convertir()">Convertir</button>
+  </form>
+  <div id="resultado">
+    <p id="kelvin">Grados Kelvin:</p>
+    <p id="farenheit">Grados Farenheit:</p>
+    <p id="rankine">Grados Rankine:</p>
+    <p id="reaumur">Grados Reaumur:</p>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
